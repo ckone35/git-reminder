@@ -2,7 +2,7 @@
 # Cheat Sheet GIT
 
 ### git branch
-to see all branch
+to see all branch :
 `git branch -a`
 
 to see remote branch
@@ -28,10 +28,10 @@ Alias : `git config --global alias.co checkout`
 
 ### git diff
 compare WD <> SA :
-# git diff
+`git diff`
 
 compare SA <> Last Commit :
-# git diff --staged
+`git diff --staged`
 
 ### git log
 `git log --pretty=format:"%h - %an, %ar : %s"`
