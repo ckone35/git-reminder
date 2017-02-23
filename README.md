@@ -16,6 +16,9 @@ to see remote branch
 Create a branch from a tag :
 `git checkout -b version2 v2.0.0`
 
+Track a branch (which is automatically done 90% of the time) :
+`git checkout --track origin/serverfix`
+
 ### git commit
 Re-execute commit : 
 `git commit --amend`
@@ -33,10 +36,18 @@ compare WD <> SA :
 compare SA <> Last Commit :
 `git diff --staged`
 
+### git fetch
+prune deleted remote branche
+git fetch -p  
+
 ### git log
 `git log --pretty=format:"%h - %an, %ar : %s"`
 
+Delete a remote Branch
+`git push origin --delete serverfix`
 
+Delete a remote Tag :
+`git push origin :refs/tags/webhook-0.1.0.7`
 
 ### git remote
 `git remote -v`
